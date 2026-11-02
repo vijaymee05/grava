@@ -2,7 +2,7 @@ name: Deploy GRAVA Website to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "Production"]
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -37,4 +37,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
